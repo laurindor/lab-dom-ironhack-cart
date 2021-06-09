@@ -27,21 +27,13 @@ function calculateAll() {
 
   document.querySelector("#total-value span");
 
-  // ITERATION 3
-  function totalProducts() {
-   totalProducts = document.getElementById("totalproducts");
-   totalProducts = total + updateSubtotal;
-   totalProducts.value = totalProducts;
-    
-  
-
 
 // ITERATION 4
 
 function removeProduct(event) {
   const target = event.currentTarget;
-  console.log('The target in remove is:', target);
-  cons nodeToDelete = target.parentNode
+  let elementRemove = target.parentNode.parentNode;
+  elementRemove.remove()
   
 }
 
